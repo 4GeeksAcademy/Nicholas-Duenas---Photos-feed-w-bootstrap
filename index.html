@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" >
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+    <body>              
+          <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid">
+              <i class="fa-brands fa-instagram"><span>Instagram</span></i>
+              <!-- Button trigger modal -->
+              <div class="dropdown">
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal" class="col-sm-2">
+                Create a new Post
+              </button>
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fa-solid fa-gear"></i>
+                </a>
+              
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Profile</a></li>
+                  <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                  <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                </ul>
+              </div>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Create a New Post</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Caption:</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="add caption of your post here..."></textarea>
+                      </div>
+                      <button type="button" class="btn btn-light"><i class="fa-solid fa-camera"></i></button>
+                      <button type="button" class="btn btn-light"><i class="fa-solid fa-location-dot"></i></button>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+
+          <br>
+
+          <nav aria-label="...">
+            <div class="d-flex justify-content-center">
+              <ul class="pagination" class="d-flex justify-content-center">
+                <li class="page-item active" aria-current="page"><a class="page-link" href="index.html"><i class="fa-solid fa-square"></i></a></li>
+                <li class="page-item">
+                  <a class="page-link" href="grid.html"><i class="fa-solid fa-table"></i></a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+          <div class="d-flex justify-content-center">
+              <div class="card" style="width: 30rem;">
+                <div class="d-flex">
+                  <div class="p-2 flex-grow-1">
+                    <h5>My Crazy dog Spark!</h3>
+                  </div>
+                  <div class="p-2">
+                    <span>10/14/2023</span>
+                  </div>
+                </div>
+                <img src="https://picsum.photos/id/237/200/200" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">1536 Likes</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+              </div>
+          </div>
+          
+          <br>
+
+          <div class="d-flex justify-content-center">
+            <div class="card" style="width: 30rem;">
+              <div class="d-flex">
+                <div class="p-2 flex-grow-1">
+                  <h5>Crazy Landscape!</h3>
+                </div>
+                <div class="p-2">
+                  <span>10/13/2023</span>
+                </div>
+              </div>
+              <img src="https://picsum.photos/seed/picsum/200/200" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">204 Likes</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+          </div>
+          
+          <br>
+          
+          <div class="d-flex justify-content-center">
+            <div class="card" style="width: 30rem;">
+              <div class="d-flex">
+                <div class="p-2 flex-grow-1">
+                  <h5>Grayscale!</h3>
+                </div>
+                <div class="p-2">
+                  <span>10/14/2023</span>
+                </div>
+              </div>
+              <img src="https://picsum.photos/200/300?grayscale" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">15 Likes</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+          </div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    </body>
+
+
+</html>
